@@ -9,14 +9,14 @@ var elOutput = elForm.querySelector('#outputAmountFizz');
 elForm.addEventListener('submit', function (evt) {
   evt.preventDefault();
 
-//Shartni yozamiz
- //Agar kiritilgan son 5 ga va 3ga qoldiqiz bo'linsa ekranda FizzBuzz so'zi chiqadi
+  //Shartni yozamiz
+  //Agar kiritilgan son 5 ga va 3ga qoldiqiz bo'linsa ekranda FizzBuzz so'zi chiqadi
   if (Number(elInputAmount.value % 5 === 0) && Number(elInputAmount.value % 3 === 0)) {
-  elOutput.textContent = 'FizzBuzz';
-}
+    elOutput.textContent = 'FizzBuzz';
+  }
 
-//Agar kiritilgan son 5 ga va 3ga qoldiqiz bo'linsa ekranda Fizz so'zi chiqadi
-else if (Number(elInputAmount.value % 5 ===0)) {
+  //Agar kiritilgan son 5 ga va 3ga qoldiqiz bo'linsa ekranda Fizz so'zi chiqadi
+  else if (Number(elInputAmount.value % 5 ===0)) {
     elOutput.textContent = 'Fizz';
   }
 
